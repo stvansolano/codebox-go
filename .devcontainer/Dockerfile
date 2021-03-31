@@ -27,6 +27,10 @@ RUN apt-get update \
     
 VOLUME [ "/var/lib/docker" ]
 
+COPY --from=golang:1.16-alpine /usr/local/go/ /usr/local/go/
+ 
+ENV PATH="/usr/local/go/bin:${PATH}"
+
 RUN wget -q -O - https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
 
 # Install kubectl
