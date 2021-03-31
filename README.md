@@ -11,14 +11,13 @@ A ready-to-use, templated GitHub Codespace that I regularly use for VS Code on G
 ## Batteries included
 
 - Docker
-- Kubernetes (WIP)
-- NodeJS
-- .NET
+- Kubernetes - K3D
 
 Extensions
 
 - Docker
 - Kubernetes
+- Go
 
 ## k3d commands
 
